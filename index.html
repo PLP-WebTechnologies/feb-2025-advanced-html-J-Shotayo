@@ -4,20 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced HTML5</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
 </head>
 <body>
 
@@ -41,8 +27,8 @@
 
     <!-- Contacts Table -->
     <h2>Contact List</h2>
-    <table>
-        <tr>
+    <table border="1" cellpadding="10" text-align: left;>
+        <thead style="background-color: #f2f2f2;">
             <th>Name</th>
             <th>Address</th>
             <th>Mobile</th>
@@ -81,13 +67,13 @@
     </table>
 
     <!-- Multimedia Elements -->
-    <h2>Enjoy Some Music</h2>
+    <h2>Enjoy Soothing Music</h2>
     <audio controls>
         <source src="audio.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
 
-    <h2>Watch This Video</h2>
+    <h2>Video</h2>
     <video width="600" controls>
         <source src="video.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -116,6 +102,7 @@
         <label for="country">Select Your Country:</label>
         <select id="country" name="country" required>
             <option value="">--Choose a Country--</option>
+            <option value="USA">Nigeria</option>
             <option value="USA">USA</option>
             <option value="UK">UK</option>
             <option value="Canada">Canada</option>
