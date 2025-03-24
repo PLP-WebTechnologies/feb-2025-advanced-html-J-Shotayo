@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <h1>Welcome to Our Website</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Our Services</h2>
+    <ol type="I">
+        <li>Web Development</li>
+        <li>Graphic Design</li>
+        <li>Digital Marketing</li>
+        <li>SEO Optimization</li>
+        <li>App Development</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Beautiful Scenery</h2>
+    <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" 
+         alt="Nature Scenery from Pexels" width="600">
+
+    <!-- Contacts Table -->
+    <h2>Contact List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>New York, USA</td>
+            <td>+1 234 567 890</td>
+            <td>john@example.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>London, UK</td>
+            <td>+44 789 456 123</td>
+            <td>jane@example.com</td>
+        </tr>
+        <tr>
+            <td>Michael Johnson</td>
+            <td>Toronto, Canada</td>
+            <td>+1 987 654 321</td>
+            <td>michael@example.com</td>
+        </tr>
+        <tr>
+            <td>Emily Brown</td>
+            <td>Sydney, Australia</td>
+            <td>+61 456 789 101</td>
+            <td>emily@example.com</td>
+        </tr>
+        <tr>
+            <td>David Lee</td>
+            <td>Berlin, Germany</td>
+            <td>+49 123 456 789</td>
+            <td>david@example.com</td>
+        </tr>
+    </table>
+
+    <!-- Multimedia Elements -->
+    <h2>Enjoy Some Music</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Watch This Video</h2>
+    <video width="600" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Registration Form -->
+    <h2>Register Here</h2>
+    <form action="/submit" method="post">
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a secure password" required minlength="6"><br><br>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Dropdown (Country Selection) -->
+        <label for="country">Select Your Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Choose a Country--</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="Germany">Germany</option>
+        </select><br><br>
+
+        <!-- Gender (Radio Buttons) -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Interests (Checkboxes) -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
